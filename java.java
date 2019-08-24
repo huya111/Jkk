@@ -1,2 +1,3 @@
 swth
 if
+char
