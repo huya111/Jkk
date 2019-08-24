@@ -7,7 +7,7 @@
 				ShowProgressDialog("登录中");
 				String userName = mEtName.getText().toString().trim();
 				String passWord= mEtWrod.getText().toString().trim();
-				HttpEngine.SERVER_URL="http://192.168.15.16:80";
+				HttpEngine.SERVER_URL="http://";
 				mAppAction.login(userName, passWord, "text", new ActionCallbackListener<AccessToken>() {
 					
 					@Override
