@@ -7,7 +7,7 @@
 				ShowProgressDialog("登录中");
 				String userName = mEtName.getText().toString().trim();
 				String passWord= mEtWrod.getText().toString().trim();
-				HttpEngine.SERVER_URL="http://";
+				HttpEngine.SERVER_URL="";
 				mAppAction.login(userName, passWord, "text", new ActionCallbackListener<AccessToken>() {
 					
 					@Override
@@ -18,6 +18,7 @@
 						DismissProgressDialog();
 						startActivity(new Intent(MainActivity.this,HomeActivity.class));
 						MainActivity.this.finish();
+						
 					}
 					
 					@Override
